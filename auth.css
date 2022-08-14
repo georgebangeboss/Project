@@ -1,0 +1,64 @@
+.auth-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 50px 0px 50px;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+.right-column{
+    border: 1px solid rgb(210, 210, 224);
+    padding :20px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.right-column form{
+    display: flex;
+    flex-direction:column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.login-button{
+    border:none;
+    border-radius: 5px;
+}
+.names::placeholder,
+.input-field::placeholder{
+    font-size: 16px;
+    color: #b8b8b8;
+}
+.input-field,
+.select-role,
+.names input{
+    margin: 5px 0px;
+    border: 1px solid #dcdcdc;
+    height: 40px;
+    border-radius: 4px;
+    padding-left:10px;
+    font-size: 14px;
+    color: #3f2828;
+}
+.select-role{
+    background: transparent;
+}
+
+.login-illustrate{
+    height: 400px;
+}
+.names{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    align-items: center;
+}
+.account-confirm{
+    font-size: 9;
+    padding-top: 10px;
+}
+.account-confirm a{
+    color:rgb(224, 68, 68);
+    font-weight: bold;
+}

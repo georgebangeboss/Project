@@ -1,0 +1,167 @@
+CSS box model
+Buttons by default have a horizontal padding of 6px and vertical padding of 1px
+By default, browser aligns elements based on text, to override use vertical-align property
+
+Text-styles
+Websites by default use Times New Roman 
+Use font-family, font-weight and font-size, font-style
+To centre text  use text-align
+setting width property to paragraph element may force it to wrap if the text is long
+line-height
+
+
+html entities
+
+paragraph element has default top and bottom margins 14px
+
+css specificity
+
+To underline with CSS we use text-decoration:underline
+
+text elements exist inside a line of text and only modify that specific part of the text. They include <strong>, <u>, <span>
+
+The span element is very useful in making flexible changes. can take pseudo-classes such as hover. 
+
+Elements that do not require a closing tag are called void elements, they include br,col,hr,img,link, input, etc
+
+google fonts Roboto regular and bold
+
+img element, when we set width height also adjusts
+img attributes include 
+object-fit: cover,contain
+object-position: left,right,center, top, bottom
+
+
+creating searchbox
+
+<input type:"text|checkbox" placeholder="Search">
+The text box has a minimum width by default, to remove it set width:0
+
+Types of elements in html
+A) Block element - take up the entire line eg a paragraph and divs - match parent in android
+B) Inline block element - only takes up as much space as needed eg img and input - wrap content in android
+C) Inline element - appear within line of text such as strong
+
+display property is used to switch an element between block and inline block
+
+display:inline-block|block;
+
+div element - div means division/box/container
+div by default is a block element, to change to inline block we use the display property. Div can contain any element inside
+
+nested layouts technique
+width of a div has to be set explicitly to use display:inline-block;
+
+to create avatar in html use border-radius attributes
+
+use font stack to create font backups
+
+bold corresponds to font weight 700, semibold 500 and regular is 400
+
+CSS grid
+Layout with rows and columns
+To create a grid we use 2 CSS properties :
+display: grid;
+column-gap:30 px;
+row-gap:30 px;
+grid-template-columns: 100px 200px ... 400px; depending on the number of columns you want
+When the number of children exceed grid-template-columns, the excess children wrap to the second rows
+
+grid-template-columns: 100px 1fr;
+fr means free space, 2fr, 3fr
+
+
+Flexbox
+Similar to grid but more flexible. grid is rigid
+children are inline-block elements by default unless their flex property is set
+To create a flexbox we use 2 CSS properties :
+display: flex;
+flex-direction:row; row is the default 
+The flex children have a property called flex similar to fr
+flex: 1;
+max-width:200px; Limits maximum width of child
+
+In flexbox the relative width is set in the child as flex property while in grid, the relative width is set when defining grid-template-columns
+
+By default the children of flexbox are aligned to the left, to override use the 
+justify-content: end|start|center|space-between; 
+align-items: stretch|start|end|center;
+
+flex-shrink:0; means no shrinking
+
+Nested flexbox
+
+To create an image button, we create a button and nest an image
+
+To target placeholder on an input element we can use pseudo class
+.search-bar::placeholder{}
+
+
+border-style:solid;
+border-color, border-width, border-radius
+To give widths to specific borders use border-bottom-width, 
+
+border: width style color
+
+box-shadow: inset horizontalposition verticalposition blur shadow color
+
+CSS position
+whenever an element is on top of another such as notification number, tooltip
+
+position:static;  is the default
+position:fixed; wraps content and floats elements, places in browser window
+top: 0px;
+left:0px;
+right: 3px; setting both left and right stretches the element
+
+use width and height with bottom and top to position divs 
+
+position absolute and relative
+position:absolute; places in page
+
+z-index is used to determine the layer that the element is placed. The higher the index the topper the layer
+position:static always appears at the bottom layer, position:fixed, position:absolute and position:relative whichever written below appears on top
+
+Whenever a position:absolute is inside a position:fixed element, the child is position relative to the fixed parent and not the page 
+Whenever a position:absolute is inside a position:relative element, the child is position relative to the normal parent and can therefore scroll 
+
+
+to centre stuff use flexbox ,align-items and justify-content
+
+pointer-events:none  -> used with tooltip
+white-space:nowrap   
+
+
+more CSS features - Responsive design
+
+using media query
+
+@media (max-width:600px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:751px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+CSS shortcuts
+
+padding: all
+
+padding: vertical horizontal
+
+padding: top right bottom left
+
+Inheritance mostly works with text, passing down from outer elements to inner elements
+
+semantic elements eg header, nav and section, same as divs but with special meanings used by robots, screen readers, search engines to recognize elements

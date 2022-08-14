@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <header class="header-nav-bar">
+      <div class="headerbar-welcome-page">
+        <div class="left-section">
+          <img
+            class="logo-icon"
+            src="./images/rabbi_logo_2.png"
+            alt="Rabbi logo"
+          />
+        </div>
+        <div class="right-section">
+          <div class="button-wrapper">
+            <button class="outline-button" onclick="location.href = 'login.html';"">Log In</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="auth-container">
+      <div class="left-column">
+        <img
+          src="/images/signup.svg"
+          alt="login image"
+          class="login-illustrate"
+        />
+      </div>
+      <div class="right-column">
+        <h3>Sign Up</h3>
+        <form>
+          <div class="names">
+            <input type="text" class="input-field" placeholder="First Name" />
+            <input type="text" class="input-field" placeholder="Last Name" />
+          </div>
+          <select class="select-role" name="roles">
+            <option value="tutor">Tutor</option>
+            <option value="student">Student</option>
+          </select>
+          <input type="email" class="input-field" placeholder="Email" />
+          <input type="password" class="input-field" placeholder="Password" />
+        </form>
+        <button class="text-button" onclick="signup()" >Sign Up</button>
+        <div class="account-confirm">
+            Already have an account? 
+            <a href="/login.html">Log In</a>
+        </div>
+      </div>
+    </main>
+    <script src="login_signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+button {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.outline-button {
+    background-color: white;
+    color: blue;
+    border:1px solid blue;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    transition: backgroud-color 0.15s, opacity 0.15s;
+}
+.text-button {
+    background-color: green;
+    color: white;
+    border: none;
+    transition: backgroud-color 0.15s, opacity 0.15s;
+}
+.outline-button:hover {
+    background-color: blue;
+    color: white;
+}
+.outline-button:active {
+    opacity: 0.2;
+    background-color: blue;
+}
+.text-button:hover {
+    background-color: blue;
+}
+.text-button:active {
+    opacity: 0.2;
+    background-color: blue;
+}
+.login-signup-button {
+    border: 1px solid rgb(122, 122, 241);
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: normal;
+    color: green;
+    background-color: rgb(252, 230, 230);
+}
+

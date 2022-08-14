@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rabbi | Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <script src="https://kit.fontawesome.com/3f0e37b3e2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="padding-top: 100px">
+    <div class="header-nav-bar">
+      <header class="headerbar-welcome-page">
+        <div class="left-section">
+          <img
+            class="logo-icon"
+            src="./images/rabbi_logo_2.png"
+            alt="Rabbi logo"
+          />
+        </div>
+        <div class="right-section">
+          <div class="button-wrapper">
+            <button class="text-button" id="signup-btn">Become A Tutor</button>
+          </div>
+          <div class="button-wrapper">
+            <button id="login-btn" class="outline-button">
+              Log In / Sign Up
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="hero">
+      <main
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          margin: 0px 30px;
+        "
+      >
+        <div class="intro-info">
+          <h1>Learn with Rabbi</h1>
+          <p>
+            Find academic assistance from our tutors <br />
+            across the globe
+          </p>
+
+          <button
+            onclick="location.href = 'signup.html';"
+            class="text-button"
+            style="background-color: red; font-size: 18px"
+          >
+            Get Help
+          </button>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-items">
+        <div class="socials-container" id="socials">
+          <a href="#socials" class="social-link" >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#socials" class="social-link" >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#socials" class="social-link" >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/george-bange-2374a919a/" class="social-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <div class="contact-us-item">
+            <i class="fas fa-envelope"></i>
+            <p>bangegeorgeogeto@gmail.com</p>
+          </div>
+          <div class="contact-us-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>+2547 69 123 105</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">&#169; Bangeboss 2022. All rights reserved</div>
+    </footer>
+    <script type="text/javascript">
+      document.getElementById("login-btn").onclick = function () {
+        location.href = "/login.html";
+      };
+      document.getElementById("signup-btn").onclick = function () {
+        location.href = "/signup.html";
+      };
+    </script>
+  </body>
+</html>

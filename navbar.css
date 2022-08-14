@@ -1,0 +1,32 @@
+
+.navbar{
+    background-color: #deeef2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+    height: 55px;
+    list-style-type: none;
+    padding:0px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+
+.navbar ul li:hover {
+    border-bottom: 2px solid rgb(212, 55, 55);
+}
+.navbar ul li:active {
+    opacity: 0.2;
+    background-color: blue;
+}

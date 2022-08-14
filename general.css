@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  white-space: nowrap;
+  padding: 0;
+  font-family: Arial;
+}
+
+body {
+  background-color: white;
+  padding-top: 100px;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/hero_image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.intro-info {
+  padding-top: 100px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin: 10px 150px;
+}
+
+.intro-info h1 {
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-size: 100%;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-info p {
+  font-size: 2rem;
+  color: rgb(223, 217, 217);
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-us-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contact-us-item i {
+  font-size: 10px;
+}
+.contact-us-item p {
+  margin-left: 5px;
+}
+.contact-us h3 {
+  padding-bottom: 8px;
+}
+footer {
+  background-color: #15558d;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.socials-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+}
+.social-link {
+  padding: 0px 6px;
+  margin: 0px 6px;
+}
+.social-link i {
+  font-size: 20px;
+  color: white;
+}
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  padding-bottom: 20px;
+}
+.copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-top: 0.5px solid #1663a6;
+}
