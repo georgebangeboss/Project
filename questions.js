@@ -8,6 +8,7 @@ const allQuestions = [
 function showNextQuestion() {
     if (index < allQuestions.length) {
         document.getElementById("current_question").innerHTML=allQuestions[index];
+        document.getElementById("answer_field").value= "";
         index++;
     } else {
         alert("You have reached end of queue");
