@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body id="fine-body">
+    <div class="header-nav-bar">
+      <header class="headerbar">
+        <div class="left-section">
+          <img
+            class="logo-icon"
+            src="./images/rabbi_logo_2.png"
+            alt="Rabbi logo"
+          />
+        </div>
+        <div class="right-section">
+          <div
+            class="notifications-icon-container"
+            id="active-notification-icon"
+          >
+            <img class="notifications-icon" src="./images/notifications.svg" />
+            <div class="notifications-count">3</div>
+            <div class="tooltip">Notifications</div>
+          </div>
+          <div class="profile-icon-container">
+            <img class="profile-icon" src="./images/user_avatar.svg" />
+            <div class="tooltip">Profile</div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="profile-main">bfhgfh</main>
+    <script>
+        const notification_container=document.querySelector('#active-notification-icon');
+        notification_container.classList.toggle('is-active');
+    </script>
+  </body>
+</html>
