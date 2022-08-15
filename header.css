@@ -11,7 +11,8 @@
   padding-left: 30px;
 }
 
-.logo-icon {
+.logo-icon,
+.logo-icon-btn {
   object-fit: cover;
   height: 80px;
 }
@@ -169,4 +170,7 @@
 
 .button-wrapper {
   margin: 0px 40px;
+}
+.logo-icon-btn {
+  cursor: pointer;
 }

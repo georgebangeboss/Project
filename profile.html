@@ -18,21 +18,31 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <script src="notification.js"></script>
   </head>
   <body id="fine-body">
-    <div class="header-nav-bar" >
+    <div class="header-nav-bar" id="profile-header">
       <header class="headerbar">
         <div class="left-section">
           <img
-            class="logo-icon"
+            class="logo-icon-btn"
             src="./images/rabbi_logo_2.png"
             alt="Rabbi logo"
+            onclick="location.href = 'dashboard.html';"
           />
         </div>
         <div class="right-section">
-          <div class="notifications-icon-container">
+          <div
+            class="notifications-icon-container"
+            onclick="location.href = 'notifications.html';"
+          >
             <img class="notifications-icon" src="./images/notifications.svg" />
-            <div class="notifications-count">3</div>
+            <div class="notifications-count" id="not-count-profile-tab"></div>
+            <script>
+                document.getElementById("not-count-profile-tab").innerHTML = notifications_size;
+            </script>
             <div class="tooltip">Notifications</div>
           </div>
           <div class="profile-icon-container" id="active-profile-icon">
@@ -42,10 +52,37 @@
         </div>
       </header>
     </div>
-    <main class="profile-main">bfhgfh</main>
+    <main class="auth-container" >
+      <div class="left-column">
+        <img
+          src="./images/set_profile.svg"
+          alt="login image"
+          class="login-illustrate"
+        />
+      </div>
+      <div class="right-column">
+        <h3>My Profile</h3>
+        <form>
+          <div class="names">
+            <input type="text" class="input-field" placeholder="First Name" />
+            <input type="text" class="input-field" placeholder="Last Name" />
+          </div>
+          <input type="email" class="input-field" placeholder="Email" />
+          <input type="password" class="input-field" placeholder="Password" />
+          <select class="select-role" name="roles">
+            <option value="tutor">Tutor</option>
+            <option value="student">Student</option>
+          </select>
+          <input type="text" class="input-field" placeholder="Field of Study" />
+        </form>
+        <button class="text-button" onclick="location.href = 'dashboard.html';">
+          Save Changes
+        </button>
+      </div>
+    </main>
     <script>
-        const profile_container=document.querySelector('#active-profile-icon');
-        profile_container.classList.toggle('is-active');
+      const profile_container = document.querySelector("#active-profile-icon");
+      profile_container.classList.toggle("is-active");
     </script>
   </body>
 </html>

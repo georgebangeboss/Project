@@ -20,13 +20,25 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.15s;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-style: Arial;
+    color: rgb(3, 54, 3);
+}
+#my_works_btn.is-active,
+#questions_btn.is-active{
+    border-bottom: 3px solid rgb(212, 55, 55);
+    color: rgb(6, 6, 51);
+    font-size: 15px;
 }
 
-
 .navbar ul li:hover {
-    border-bottom: 2px solid rgb(212, 55, 55);
+    border-bottom: 2px solid rgb(247, 175, 175);
+    color: blue;
 }
 .navbar ul li:active {
     opacity: 0.2;
     background-color: blue;
+    color: rgb(232, 232, 248);
 }

@@ -18,24 +18,37 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <script src="notification.js"></script>
   </head>
-  <body>
+  <body class="body-dashboard">
     <div class="header-nav-bar">
       <header class="headerbar">
         <div class="left-section">
           <img
-            class="logo-icon"
+            class="logo-icon-btn"
             src="./images/rabbi_logo_2.png"
             alt="Rabbi logo"
+            onclick="location.href = 'dashboard.html';"
           />
         </div>
         <div class="right-section">
-          <div class="notifications-icon-container" onclick="location.href = 'notifications.html';">
+          <div
+            class="notifications-icon-container"
+            onclick="location.href = 'notifications.html';"
+          >
             <img class="notifications-icon" src="./images/notifications.svg" />
-            <div class="notifications-count">3</div>
+            <div class="notifications-count" id="not-count-dash-tab"></div>
+            <script>
+                document.getElementById("not-count-dash-tab").innerHTML = notifications_size;
+            </script>
             <div class="tooltip">Notifications</div>
           </div>
-          <div class="profile-icon-container" onclick="location.href = 'profile.html';">
+          <div
+            class="profile-icon-container"
+            onclick="location.href = 'profile.html';"
+          >
             <img class="profile-icon" src="./images/user_avatar.svg" />
             <div class="tooltip">Profile</div>
           </div>
@@ -43,16 +56,11 @@
       </header>
       <nav class="navbar">
         <ul>
-          <li>
-            Questions
-          </li>
-          <li>
-            My Work
-          </li>
+          <li onclick="location.href = 'questions.html';">Questions</li>
+          <li onclick="location.href = 'works.html';">My Work</li>
         </ul>
       </nav>
     </div>
-    <div>Iam boss</div>
-    <div class="space" style="height: 3000px"></div>
+    <div>Dashboard</div>
   </body>
 </html>
